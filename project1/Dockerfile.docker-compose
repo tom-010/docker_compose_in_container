@@ -1,0 +1,7 @@
+FROM docker/compose:debian-1.29.2
+
+WORKDIR /project/
+COPY . project/
+
+# CMD ["docker-compose", "-p", "project1", "up", "--build"]
+CMD ["/bin/bash"]
